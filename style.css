@@ -1,0 +1,39 @@
+body {
+  background-color: #d5c5c8;
+  display:flex;
+  flex-direction: column;
+}
+
+#survey-form {
+  background-color: #ffdbda;
+}
+
+.rowtabs {
+  display:flex;
+  justify-content: center;
+  align-items: baseline;
+  padding-top: 5px;
+}
+
+.labels {
+  flex-basis: 10em;
+}
+
+.rightTab {
+  flex-basis: 10em;
+}
+
+.centerTab {
+  display: flex;
+  justify-content: center;
+}
+
+.radiobuttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  justify-content: center;
+  display: flex;
+}
