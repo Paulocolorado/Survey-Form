@@ -33,7 +33,7 @@ body {
   flex-direction: column;
 }
 
-.title {
+#title {
   justify-content: center;
   display: flex;
 }
