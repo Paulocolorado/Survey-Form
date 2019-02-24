@@ -1,0 +1,97 @@
+<html>
+
+<head>
+  <title>Build a Survey Form</title>
+  <link href="style.css" rel="stylesheet" /> 
+</head>
+
+<body>
+  <header>
+    <div id="title">
+      <h1>Paulo's Form</h1>
+      <p id="description">Freecodecamp Form </p>
+    </div>
+  </header>
+  <main>
+    <form id="survey-form">
+      <div class="rowtabs">
+        <div class="labels">
+          <label for="name" id="name-label"> Name: </label>
+        </div>
+        <div class="rightTab">
+          <input type="text" id="name" placeholder="Ingrese su nombre">
+          </input>
+        </div>  
+      </div>
+      <div class="rowtabs">
+        <div class="labels">
+          <label id="email-label"> Email: </label>
+        </div>
+        <div class="rightTab">  
+          <input type="email" id="email" placeholder="Ingrese su correo">
+          </input>
+        </div>  
+      </div>
+      <div class="rowtabs">
+        <div class="labels">
+          <label id="number-label"> Phone number: </label>
+        </div>  
+        <div class="rightTab">  
+          <input type="tel" id="number" placeholder="Ingrese su número" min="1" max="99">
+          </input>
+        </div>
+      </div>  
+      <div class="centerTab">
+        <select id="dropdown" name="currentPos" class="dropdown">
+          <option disabled value>What do yo do?</option>
+          <option name="occupation" value="student">Student</option>
+          <option name="occupation" value="job">Full Time Job</option>
+          <option name="occupation" value="learner">Full Time Learner</option>
+          <option name="occupation" value="preferNo">Prefer not to say</option>
+          <option name="occupation" value="other">Other</option>
+        </select>
+      </div>
+      <div class="rowtabs">
+        <ul style="list-style: none;" class="radiobuttons">
+          <li class="radio"><label><input name="radio-buttons" value="1"  type="radio" class="userRatings" >Definitely</label></li>
+          <li class="radio"><label><input name="radio-buttons" value="2"  type="radio" class="userRatings" >Maybe</label></li>
+          <li class="radio"><label><input name="radio-buttons" value="3"  type="radio" class="userRatings" >Not sure</label></li>
+        </ul>
+      </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label for="preferences" class="centerTab">Things that should be improved in the future<br>(Check all that apply): </label>
+        </div>
+        <div class="rowtabs">
+          <ul id="preferences" style="list-style: none;" >
+            <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Front-end Projects</label></li>
+            <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Back-end Projects</li>
+            <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Data Visualization</label></li>
+            <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Challenges</label></li>
+            <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Open Source Community</label></li>
+            <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">Gitter help rooms</label></li>
+            <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRatings">Videos</label></li>
+            <li class="checkbox"><label><input name="prefer" value="8" type="checkbox" class="userRatings">City Meetups</label></li>
+            <li class="checkbox"><label><input name="prefer" value="9" type="checkbox" class="userRatings">Wiki</label></li>
+            <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Forum</label></li>
+            <li class="checkbox"><label><input name="prefer" value="11" type="checkbox" class="userRatings">Additional Courses</label></li>
+            <li class="checkbox"><label><input name="prefer" value="11" type="checkbox" class="userRatings">Git</label></li>
+          </ul>
+        </div>
+      </div>
+      <div class="centerTab">
+        <div class="labels">
+          <label for="comments">Any Comments or Suggestions?</label>
+        </div>
+        <div class="rightTab">
+          <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+        </div>
+      </div>
+      <div class="centerTab">
+        <button id="submit" type="submit">Submit</button>
+      </div>
+    </form>
+  </main>
+</body>
+
+</html>
